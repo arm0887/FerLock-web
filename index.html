@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FerLock: Mini-almacenes y lockers seguros en Pueblo Libre. Libera espacio en tu depa desde S/ 35/mes.">
+  <meta name="keywords" content="mini-almacenes Pueblo Libre, guardar cosas Lima, lockers para departamentos">
   <title>FerLock - Libera tu espacio en Pueblo Libre</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -38,17 +40,31 @@
       justify-content: space-between;
       align-items: center;
     }
+    nav .nav-links {
+      display: flex;
+      align-items: center;
+    }
     nav a {
       color: white;
       padding: 10px 15px;
       font-weight: 600;
+      transition: color 0.3s;
     }
     nav a:hover {
       color: #f97316; /* Naranja suave */
     }
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
     /* Header */
     header {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x600?text=Depa+Ordenado'); /* Reemplazar por tu imagen */
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x600?text=Depa+Ordenado');
       background-size: cover;
       background-position: center;
       color: white;
@@ -64,12 +80,14 @@
       margin-bottom: 20px;
     }
     .btn-primary {
-      background-color: #f97316; /* Naranja suave */
+      background-color: #f97316;
       color: white;
       padding: 12px 24px;
       border-radius: 5px;
       font-weight: 600;
       transition: background-color 0.3s;
+      display: inline-block;
+      margin: 10px 5px;
     }
     .btn-primary:hover {
       background-color: #e85e0d;
@@ -80,8 +98,9 @@
       color: white;
       padding: 10px 20px;
       border-radius: 5px;
-      margin-left: 10px;
       transition: color 0.3s, border-color 0.3s;
+      display: inline-block;
+      margin: 10px 5px;
     }
     .btn-secondary:hover {
       color: #f97316;
@@ -147,6 +166,11 @@
       border-radius: 5px;
       margin-bottom: 10px;
     }
+    .step h3 {
+      font-size: 1.2rem;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
     /* Precios */
     .pricing-table {
       display: grid;
@@ -172,6 +196,26 @@
       color: #f97316;
       margin-bottom: 10px;
     }
+    /* FAQ */
+    .faq {
+      max-width: 800px;
+      margin: 30px auto;
+    }
+    .faq details {
+      background: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .faq summary {
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .faq p {
+      margin-top: 10px;
+      text-align: left;
+    }
     /* Contacto */
     .contact-form {
       max-width: 600px;
@@ -187,6 +231,7 @@
       margin-bottom: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
     }
     .contact-form button {
       width: 100%;
@@ -197,6 +242,7 @@
       border-radius: 5px;
       font-weight: 600;
       cursor: pointer;
+      transition: background-color 0.3s;
     }
     .contact-form button:hover {
       background-color: #e85e0d;
@@ -205,11 +251,19 @@
       text-align: center;
       margin-top: 30px;
     }
+    .contact-info a {
+      color: #1e3a8a;
+      margin: 0 10px;
+    }
+    .contact-info a:hover {
+      color: #f97316;
+    }
     .map {
       width: 100%;
       height: 300px;
       margin-top: 20px;
       border: none;
+      border-radius: 10px;
     }
     /* Footer */
     footer {
@@ -230,9 +284,32 @@
       section h2 {
         font-size: 1.5rem;
       }
-      nav .container {
+      /* Menú hamburguesa */
+      .hamburger {
+        display: block;
+      }
+      .nav-links {
+        display: none;
         flex-direction: column;
-        gap: 10px;
+        width: 100%;
+        background-color: #1e3a8a;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .nav-links a {
+        padding: 15px;
+        text-align: center;
+      }
+      /* Botones CTA */
+      .btn-primary, .btn-secondary {
+        display: block;
+        width: fit-content;
+        margin: 15px auto;
       }
     }
   </style>
@@ -241,12 +318,15 @@
   <!-- Navegación -->
   <nav>
     <div class="container">
-      <a href="#inicio">Inicio</a>
-      <a href="#que-ofrecemos">¿Qué ofrecemos?</a>
-      <a href="#como-funciona">¿Cómo funciona?</a>
-      <a href="#precios">Precios</a>
-      <a href="#sobre-nosotros">Sobre Nosotros</a>
-      <a href="#contacto">Contacto</a>
+      <button class="hamburger">☰</button>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#que-ofrecemos">¿Qué ofrecemos?</a>
+        <a href="#como-funciona">¿Cómo funciona?</a>
+        <a href="#precios">Precios</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
     </div>
   </nav>
 
@@ -278,7 +358,9 @@
           <p>En Pueblo Libre, a pasos de tu hogar, con acceso cuando quieras.</p>
         </div>
       </div>
-      <p style="font-style: italic; margin-top: 20px; text-align: center;">"FerLock cambió mi vida. Mi depa de 60 m² ahora se siente más grande, y mis decoraciones navideñas están seguras hasta diciembre. ¡Súper fácil de usar!" – Ana, vecina de Pueblo Libre.</p>
+      <p style="font-style: italic; margin-top: 20px; text-align: center;">
+        "FerLock cambió mi vida. Mi depa de 60 m² ahora se siente más grande, y mis decoraciones navideñas están seguras hasta diciembre. ¡Súper fácil de usar!"<br>– Ana, vecina de Pueblo Libre.
+      </p>
     </div>
   </section>
 
@@ -307,7 +389,9 @@
           <a href="#contacto" class="btn-primary">Conoce todos los beneficios</a>
         </div>
       </div>
-      <p style="font-style: italic; text-align: center; margin-top: 20px;">“Con FerLock, no guardas cosas. Guardas momentos, sueños y espacio para vivir mejor.”</p>
+      <p style="font-style: italic; text-align: center; margin-top: 20px;">
+        “Con FerLock, no guardas cosas. Guardas momentos, sueños y espacio para vivir mejor.”
+      </p>
     </div>
   </section>
 
@@ -333,7 +417,7 @@
           <p>Usa tu código único para entrar 24/7. Monitorea todo desde nuestra app y vive tranquilo.</p>
         </div>
       </div>
-      <div style="text-align: center; margin-top: 20px;">
+      <div style="text-align: center; margin-top: 30px;">
         <a href="#contacto" class="btn-primary">Prueba FerLock hoy</a>
       </div>
     </div>
@@ -370,9 +454,27 @@
           <p>Incluye: Todo lo anterior + asesoría personalizada.</p>
         </div>
       </div>
-      <p style="text-align: center; margin-top: 20px;">Descuento del 10% por pago anual. Primer mes gratis para contratos de 6 meses.</p>
-      <div style="text-align: center;">
+      <p style="text-align: center; margin-top: 20px;">
+        Descuento del 10% por pago anual. <strong>Primer mes gratis</strong> para contratos de 6 meses.
+      </p>
+      <div style="text-align: center; margin-top: 20px;">
         <a href="#contacto" class="btn-primary">Cotiza tu espacio</a>
+      </div>
+      <!-- FAQ -->
+      <div class="faq">
+        <h2>Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Puedo cambiar de tamaño si necesito más espacio?</summary>
+          <p>Sí, en FerLock puedes cambiar de tamaño cuando lo necesites sin complicaciones. Solo contáctanos.</p>
+        </details>
+        <details>
+          <summary>¿Qué tan seguro es FerLock?</summary>
+          <p>Tus cosas están protegidas con cámaras 24/7, acceso por código único y un seguro incluido.</p>
+        </details>
+        <details>
+          <summary>¿Necesito un contrato largo?</summary>
+          <p>No, ofrecemos planes flexibles sin contratos largos ni letras chicas.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -382,7 +484,9 @@
     <div class="container">
       <h2>FerLock: Tu espacio, nuestra pasión</h2>
       <p>Somos más que un lugar para guardar cosas. Somos la solución para que vivas más ligero en Pueblo Libre.</p>
-      <p style="max-width: 800px; margin: 20px auto;">En FerLock, todo empezó con una idea simple: devolverle el espacio a las familias y personas que aman su hogar, pero sienten que las cosas se acumulan. Vivimos en Pueblo Libre, como tú, y sabemos lo que es querer un depa ordenado sin sacrificar lo que importa. Por eso creamos mini-almacenes y lockers seguros, accesibles y pensados para ti.</p>
+      <p style="max-width: 800px; margin: 20px auto;">
+        En FerLock, todo empezó con una idea simple: devolverle el espacio a las familias y personas que aman su hogar, pero sienten que las cosas se acumulan. Vivimos en Pueblo Libre, como tú, y sabemos lo que es querer un depa ordenado sin sacrificar lo que importa. Por eso creamos mini-almacenes y lockers seguros, accesibles y pensados para ti. Con tecnología moderna, atención cercana y un compromiso con tu tranquilidad, estamos aquí para ayudarte a vivir sin límites.
+      </p>
       <div class="services-grid">
         <div class="service-card">
           <h3>Confianza</h3>
@@ -397,7 +501,7 @@
           <p>Apoyamos a nuestros vecinos en Pueblo Libre.</p>
         </div>
       </div>
-      <div style="text-align: center; margin-top: 20px;">
+      <div style="text-align: center; margin-top: 30px;">
         <a href="#contacto" class="btn-primary">Conócenos mejor</a>
       </div>
     </div>
@@ -408,17 +512,17 @@
     <div class="container">
       <h2>Estamos a un clic de ayudarte</h2>
       <p>¿Listo para liberar espacio? Escríbenos, llámanos o visítanos en Pueblo Libre.</p>
-      <form class="contact-form">
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo" required>
-        <input type="tel" placeholder="Teléfono" required>
-        <select>
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo" required>
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+        <select name="interes">
           <option value="">Selecciona tu interés</option>
           <option value="locker">Locker</option>
           <option value="mini-almacen">Mini-almacén</option>
           <option value="consulta">Consulta general</option>
         </select>
-        <textarea placeholder="Mensaje" rows="5" required></textarea>
+        <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
         <button type="submit">Enviar mensaje</button>
       </form>
       <div class="contact-info">
@@ -443,5 +547,15 @@
       <p>FerLock: Donde tus cosas encuentran su lugar y tu hogar recupera su magia.</p>
     </div>
   </footer>
+
+  <!-- Script para menú hamburguesa -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
