@@ -1,1 +1,447 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c1{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:10pt;font-family:"Courier New";font-style:normal}.c4{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c0{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c3{background-color:#ffffff;max-width:451.4pt;padding:72pt 72pt 72pt 72pt}.c2{height:11pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}</style></head><body class="c3 doc-content"><p class="c0"><span class="c1">&lt;!DOCTYPE html&gt;</span></p><p class="c0"><span class="c1">&lt;html lang=&quot;es&quot;&gt;</span></p><p class="c0"><span class="c1">&lt;head&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;meta name=&quot;description&quot; content=&quot;FerLock: Mini-almacenes y lockers seguros en Pueblo Libre. Libera espacio en tu depa desde S/ 35/mes.&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;meta name=&quot;keywords&quot; content=&quot;mini-almacenes Pueblo Libre, guardar cosas Lima, lockers para departamentos&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;title&gt;FerLock - Libera tu espacio en Pueblo Libre&lt;/title&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;style&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; * {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; box-sizing: border-box;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; body {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-family: &#39;Poppins&#39;, sans-serif;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #f8fafc;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #2c3e50;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; line-height: 1.6;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; a {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .container {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; max-width: 1200px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 0 auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 0 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Navegaci&oacute;n */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; nav {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #1e3a8a; /* Azul claro */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 15px 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; position: sticky;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; top: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; z-index: 100;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; nav .container {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; justify-content: space-between;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; flex-wrap: wrap;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; nav a {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 10px 15px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; transition: color 0.3s;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; nav a:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #f97316; /* Naranja suave */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Header */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; header {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(&#39;https://via.placeholder.com/1200x600?text=Depa+Ordenado&#39;); /* Reemplazar */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-size: cover;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-position: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 100px 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; header h1 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 2.5rem;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; header p {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1.2rem;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .btn-primary {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #f97316; /* Naranja suave */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 12px 24px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; transition: background-color 0.3s;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; display: inline-block;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .btn-primary:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #e85e0d;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .btn-secondary {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: transparent;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border: 2px solid white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 10px 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-left: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; transition: color 0.3s, border-color 0.3s;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; display: inline-block;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .btn-secondary:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #f97316;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-color: #f97316;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Secciones */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; section {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 60px 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; section h2 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 2rem;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #1e3a8a;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; section p {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; max-width: 800px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 0 auto 30px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Servicios */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .services-grid {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; display: grid;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; gap: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-top: 30px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .service-card {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .service-card img {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; height: 150px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; object-fit: cover;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .service-card h3 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1.3rem;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #1e3a8a;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Proceso */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .steps {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; flex-wrap: wrap;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; justify-content: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; gap: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .step {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; flex: 1 1 250px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .step img {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; height: 150px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; object-fit: cover;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .step h3 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1.2rem;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #1e3a8a;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Precios */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .pricing-table {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; display: grid;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; gap: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-top: 30px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .price-card {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .price-card h3 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1.2rem;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #1e3a8a;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .price-card p.price {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1.5rem;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #f97316;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* FAQ */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .faq {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; max-width: 800px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 30px auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .faq details {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 15px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .faq summary {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; cursor: pointer;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .faq p {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-top: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: left;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Contacto */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .contact-form {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; max-width: 600px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 30px auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .contact-form input, .contact-form textarea, .contact-form select {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border: 1px solid #ccc;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-family: &#39;Poppins&#39;, sans-serif;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .contact-form button {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #f97316;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 12px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; cursor: pointer;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; transition: background-color 0.3s;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .contact-form button:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #e85e0d;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .contact-info {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-top: 30px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .contact-info a {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #1e3a8a;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 0 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .contact-info a:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #f97316;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .map {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; height: 300px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-top: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Footer */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; footer {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #1e3a8a;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-top: 40px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Responsive */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; @media (max-width: 768px) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; header h1 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.8rem;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; header p {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; font-size: 1rem;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; section h2 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.5rem;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; .btn-secondary {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; margin-left: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; margin-top: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; nav .container {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; flex-direction: column;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; gap: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &lt;/style&gt;</span></p><p class="c0"><span class="c1">&lt;/head&gt;</span></p><p class="c0"><span class="c1">&lt;body&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Navegaci&oacute;n --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;nav&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#inicio&quot;&gt;Inicio&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#que-ofrecemos&quot;&gt;&iquest;Qu&eacute; ofrecemos?&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#como-funciona&quot;&gt;&iquest;C&oacute;mo funciona?&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#precios&quot;&gt;Precios&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#sobre-nosotros&quot;&gt;Sobre Nosotros&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#contacto&quot;&gt;Contacto&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/nav&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- P&aacute;gina de Inicio --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;header id=&quot;inicio&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h1&gt;&iexcl;Libera tu espacio, vive sin l&iacute;mites con FerLock!&lt;/h1&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;Mini-almacenes y lockers seguros para tus cosas favoritas, justo en el coraz&oacute;n de Pueblo Libre. Guarda lo que amas, recupera tu hogar.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#contacto&quot; class=&quot;btn-primary&quot;&gt;Reserva tu espacio ahora&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#como-funciona&quot; class=&quot;btn-secondary&quot;&gt;Descubre c&oacute;mo funciona&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/header&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Propuesta de Valor --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;section&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;Por qu&eacute; elegir FerLock&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;services-grid&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;service-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Espacio a tu medida&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Mini-almacenes desde 2 m&sup2; y lockers desde 0.5 m&sup2;, perfectos para cualquier necesidad.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;service-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Seguridad total&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;C&aacute;maras 24/7, acceso con c&oacute;digo &uacute;nico y seguro incluido.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;service-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Siempre cerca&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;En Pueblo Libre, a pasos de tu hogar, con acceso cuando quieras.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p style=&quot;font-style: italic; margin-top: 20px; text-align: center;&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &quot;FerLock cambi&oacute; mi vida. Mi depa de 60 m&sup2; ahora se siente m&aacute;s grande, y mis decoraciones navide&ntilde;as est&aacute;n seguras hasta diciembre. &iexcl;S&uacute;per f&aacute;cil de usar!&quot;&lt;br&gt;&ndash; Ana, vecina de Pueblo Libre.</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- &iquest;Qu&eacute; ofrecemos? --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;section id=&quot;que-ofrecemos&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;Soluciones para que tu hogar respire&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;En FerLock, entendemos que cada cosa que guardas cuenta una historia. Por eso, te ofrecemos espacios seguros y flexibles para que vivas sin apretujones.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;services-grid&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;service-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;https://via.placeholder.com/250x150?text=Mini-Almac&eacute;n&quot; alt=&quot;Mini-Almac&eacute;n&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Mini-almacenes (2-10 m&sup2;)&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Desde maletas hasta muebles, guarda todo lo que no cabe en tu depa. Perfecto para familias, mudanzas o esas cosas que usas de vez en cuando.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#precios&quot; class=&quot;btn-primary&quot;&gt;Explora tama&ntilde;os&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;service-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;https://via.placeholder.com/250x150?text=Locker&quot; alt=&quot;Locker&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Lockers (0.5-1 m&sup2;)&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Para tus tesoros peque&ntilde;os: colecciones, documentos o esa maleta que siempre est&aacute; en medio. Acceso r&aacute;pido y seguro, como una extensi&oacute;n de tu closet.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#precios&quot; class=&quot;btn-primary&quot;&gt;Reserva un locker&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;service-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;https://via.placeholder.com/250x150?text=Extras&quot; alt=&quot;Extras&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Servicios extras&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Recojo y entrega, seguro incluido y gesti&oacute;n desde nuestra app FerLock.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#contacto&quot; class=&quot;btn-primary&quot;&gt;Conoce todos los beneficios&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p style=&quot;font-style: italic; text-align: center; margin-top: 20px;&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &ldquo;Con FerLock, no guardas cosas. Guardas momentos, sue&ntilde;os y espacio para vivir mejor.&rdquo;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- &iquest;C&oacute;mo funciona? --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;section id=&quot;como-funciona&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;Tan f&aacute;cil como 1, 2, 3&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;En FerLock, simplificamos todo para que guardar tus cosas sea un placer, no un problema.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;steps&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;step&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;https://via.placeholder.com/250x150?text=Elige&quot; alt=&quot;Elige tu espacio&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;1. Elige tu espacio&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Selecciona un mini-almac&eacute;n o locker seg&uacute;n lo que necesites. Usa nuestra calculadora o cont&aacute;ctanos para asesorarte.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;step&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;https://via.placeholder.com/250x150?text=Reserva&quot; alt=&quot;Reserva y guarda&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;2. Reserva y guarda&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Haz tu reserva online, trae tus cosas o d&eacute;jalas con nuestro servicio de recojo. &iexcl;Listo, tu espacio est&aacute; asegurado!&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;step&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;https://via.placeholder.com/250x150?text=Accede&quot; alt=&quot;Accede cuando quieras&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;3. Accede cuando quieras&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Usa tu c&oacute;digo &uacute;nico para entrar 24/7. Monitorea todo desde nuestra app y vive tranquilo.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div style=&quot;text-align: center; margin-top: 30px;&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#contacto&quot; class=&quot;btn-primary&quot;&gt;Prueba FerLock hoy&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Precios --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;section id=&quot;precios&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;Espacios que caben en tu presupuesto&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;Transparentes y sin sorpresas. Elige el plan que mejor se adapta a ti y empieza a disfrutar de m&aacute;s espacio hoy.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;pricing-table&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;price-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Locker Peque&ntilde;o (0.5 m&sup2;)&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;price&quot;&gt;S/ 35/mes&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Ideal para: Documentos, maletas, colecciones.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Incluye: Seguro, acceso 24/7, app.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;price-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Locker Grande (1 m&sup2;)&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;price&quot;&gt;S/ 60/mes&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Ideal para: Equipos deportivos, cajas grandes.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Incluye: Todo lo anterior + opci&oacute;n de recojo.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;price-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Mini-Almac&eacute;n Chico (2 m&sup2;)&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;price&quot;&gt;S/ 120/mes&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Ideal para: Decoraciones, ropa estacional, bicicletas.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Incluye: Todo lo anterior + estanter&iacute;as.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;price-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Mini-Almac&eacute;n Mediano (5 m&sup2;)&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;price&quot;&gt;S/ 250/mes&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Ideal para: Muebles peque&ntilde;os, mudanzas.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Incluye: Todo lo anterior + asesor&iacute;a personalizada.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p style=&quot;text-align: center; margin-top: 20px;&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; Descuento del 10% por pago anual. &lt;strong&gt;Primer mes gratis&lt;/strong&gt; para contratos de 6 meses.</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div style=&quot;text-align: center; margin-top: 20px;&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#contacto&quot; class=&quot;btn-primary&quot;&gt;Cotiza tu espacio&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;!-- FAQ --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;faq&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Preguntas frecuentes&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;details&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;summary&gt;&iquest;Puedo cambiar de tama&ntilde;o si necesito m&aacute;s espacio?&lt;/summary&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;S&iacute;, en FerLock puedes cambiar de tama&ntilde;o cuando lo necesites sin complicaciones. Solo cont&aacute;ctanos.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/details&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;details&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;summary&gt;&iquest;Qu&eacute; tan seguro es FerLock?&lt;/summary&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Tus cosas est&aacute;n protegidas con c&aacute;maras 24/7, acceso por c&oacute;digo &uacute;nico y un seguro incluido.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/details&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;details&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;summary&gt;&iquest;Necesito un contrato largo?&lt;/summary&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;No, ofrecemos planes flexibles sin contratos largos ni letras chicas.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/details&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Sobre Nosotros --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;section id=&quot;sobre-nosotros&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;FerLock: Tu espacio, nuestra pasi&oacute;n&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;Somos m&aacute;s que un lugar para guardar cosas. Somos la soluci&oacute;n para que vivas m&aacute;s ligero en Pueblo Libre.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p style=&quot;max-width: 800px; margin: 20px auto;&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; En FerLock, todo empez&oacute; con una idea simple: devolverle el espacio a las familias y personas que aman su hogar, pero sienten que las cosas se acumulan. Vivimos en Pueblo Libre, como t&uacute;, y sabemos lo que es querer un depa ordenado sin sacrificar lo que importa. Por eso creamos mini-almacenes y lockers seguros, accesibles y pensados para ti. Con tecnolog&iacute;a moderna, atenci&oacute;n cercana y un compromiso con tu tranquilidad, estamos aqu&iacute; para ayudarte a vivir sin l&iacute;mites.</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;services-grid&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;service-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Confianza&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Seguridad y transparencia en cada paso.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;service-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Conveniencia&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Espacios y servicios que hacen tu vida m&aacute;s f&aacute;cil.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;service-card&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Comunidad&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Apoyamos a nuestros vecinos en Pueblo Libre.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div style=&quot;text-align: center; margin-top: 30px;&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#contacto&quot; class=&quot;btn-primary&quot;&gt;Con&oacute;cenos mejor&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Contacto --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;section id=&quot;contacto&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;Estamos a un clic de ayudarte&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;&iquest;Listo para liberar espacio? Escr&iacute;benos, ll&aacute;manos o vis&iacute;tanos en Pueblo Libre.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;form class=&quot;contact-form&quot; action=&quot;https://formspree.io/f/your-form-id&quot; method=&quot;POST&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;text&quot; name=&quot;nombre&quot; placeholder=&quot;Nombre&quot; required&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Correo&quot; required&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;tel&quot; name=&quot;telefono&quot; placeholder=&quot;Tel&eacute;fono&quot; required&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;select name=&quot;interes&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option value=&quot;&quot;&gt;Selecciona tu inter&eacute;s&lt;/option&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option value=&quot;locker&quot;&gt;Locker&lt;/option&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option value=&quot;mini-almacen&quot;&gt;Mini-almac&eacute;n&lt;/option&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option value=&quot;consulta&quot;&gt;Consulta general&lt;/option&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/select&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;textarea name=&quot;mensaje&quot; placeholder=&quot;Mensaje&quot; rows=&quot;5&quot; required&gt;&lt;/textarea&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;button type=&quot;submit&quot;&gt;Enviar mensaje&lt;/button&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/form&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;contact-info&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Direcci&oacute;n:&lt;/strong&gt; Av. Sucre XXX, Pueblo Libre, Lima&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Tel&eacute;fono:&lt;/strong&gt; +51 987 654 321&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; contacto@ferlock.pe&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Horario:&lt;/strong&gt; Lunes a domingo, 8:00 - 20:00&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;a href=&quot;https://wa.me/+51987654321&quot; class=&quot;btn-primary&quot; target=&quot;_blank&quot;&gt;WhatsApp&lt;/a&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;https://instagram.com/FerLockPeru&quot; target=&quot;_blank&quot;&gt;Instagram&lt;/a&gt; |</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;https://facebook.com/FerLockPeru&quot; target=&quot;_blank&quot;&gt;Facebook&lt;/a&gt; |</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;https://tiktok.com/@FerLockPeru&quot; target=&quot;_blank&quot;&gt;TikTok&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;iframe class=&quot;map&quot; src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.625775074723!2d-77.07207188518115!3d-12.073093991450614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c99c0c7b5b3b%3A0x6e7f7b7b7c7b7b7b!2sAv.%20Antonio%20Jos%C3%A9%20de%20Sucre%2C%20Pueblo%20Libre%2015072%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1634567890123&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Footer --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;footer&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;FerLock: Donde tus cosas encuentran su lugar y tu hogar recupera su magia.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/footer&gt;</span></p><p class="c0"><span class="c1">&lt;/body&gt;</span></p><p class="c0"><span class="c1">&lt;/html&gt;</span></p><p class="c0 c2"><span class="c4"></span></p></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FerLock - Libera tu espacio en Pueblo Libre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8fafc;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    /* Navegación */
+    nav {
+      background-color: #1e3a8a; /* Azul claro */
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      padding: 10px 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #f97316; /* Naranja suave */
+    }
+    /* Header */
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x600?text=Depa+Ordenado'); /* Reemplazar por tu imagen */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .btn-primary {
+      background-color: #f97316; /* Naranja suave */
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    .btn-primary:hover {
+      background-color: #e85e0d;
+    }
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-left: 10px;
+      transition: color 0.3s, border-color 0.3s;
+    }
+    .btn-secondary:hover {
+      color: #f97316;
+      border-color: #f97316;
+    }
+    /* Secciones */
+    section {
+      padding: 60px 20px;
+    }
+    section h2 {
+      font-size: 2rem;
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+    section p {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    /* Servicios */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .service-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .service-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .service-card h3 {
+      font-size: 1.3rem;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+    /* Proceso */
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .step {
+      flex: 1 1 250px;
+      text-align: center;
+      padding: 20px;
+    }
+    .step img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    /* Precios */
+    .pricing-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .price-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .price-card h3 {
+      font-size: 1.2rem;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+    .price-card p.price {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #f97316;
+      margin-bottom: 10px;
+    }
+    /* Contacto */
+    .contact-form {
+      max-width: 600px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form input, .contact-form textarea, .contact-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      width: 100%;
+      background-color: #f97316;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #e85e0d;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .map {
+      width: 100%;
+      height: 300px;
+      margin-top: 20px;
+      border: none;
+    }
+    /* Footer */
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+      nav .container {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navegación -->
+  <nav>
+    <div class="container">
+      <a href="#inicio">Inicio</a>
+      <a href="#que-ofrecemos">¿Qué ofrecemos?</a>
+      <a href="#como-funciona">¿Cómo funciona?</a>
+      <a href="#precios">Precios</a>
+      <a href="#sobre-nosotros">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Página de Inicio -->
+  <header id="inicio">
+    <div class="container">
+      <h1>¡Libera tu espacio, vive sin límites con FerLock!</h1>
+      <p>Mini-almacenes y lockers seguros para tus cosas favoritas, justo en el corazón de Pueblo Libre. Guarda lo que amas, recupera tu hogar.</p>
+      <a href="#contacto" class="btn-primary">Reserva tu espacio ahora</a>
+      <a href="#como-funciona" class="btn-secondary">Descubre cómo funciona</a>
+    </div>
+  </header>
+
+  <!-- Propuesta de Valor -->
+  <section>
+    <div class="container">
+      <h2>Por qué elegir FerLock</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Espacio a tu medida</h3>
+          <p>Mini-almacenes desde 2 m² y lockers desde 0.5 m², perfectos para cualquier necesidad.</p>
+        </div>
+        <div class="service-card">
+          <h3>Seguridad total</h3>
+          <p>Cámaras 24/7, acceso con código único y seguro incluido.</p>
+        </div>
+        <div class="service-card">
+          <h3>Siempre cerca</h3>
+          <p>En Pueblo Libre, a pasos de tu hogar, con acceso cuando quieras.</p>
+        </div>
+      </div>
+      <p style="font-style: italic; margin-top: 20px; text-align: center;">"FerLock cambió mi vida. Mi depa de 60 m² ahora se siente más grande, y mis decoraciones navideñas están seguras hasta diciembre. ¡Súper fácil de usar!" – Ana, vecina de Pueblo Libre.</p>
+    </div>
+  </section>
+
+  <!-- ¿Qué ofrecemos? -->
+  <section id="que-ofrecemos">
+    <div class="container">
+      <h2>Soluciones para que tu hogar respire</h2>
+      <p>En FerLock, entendemos que cada cosa que guardas cuenta una historia. Por eso, te ofrecemos espacios seguros y flexibles para que vivas sin apretujones.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://via.placeholder.com/250x150?text=Mini-Almacén" alt="Mini-Almacén">
+          <h3>Mini-almacenes (2-10 m²)</h3>
+          <p>Desde maletas hasta muebles, guarda todo lo que no cabe en tu depa. Perfecto para familias, mudanzas o esas cosas que usas de vez en cuando.</p>
+          <a href="#precios" class="btn-primary">Explora tamaños</a>
+        </div>
+        <div class="service-card">
+          <img src="https://via.placeholder.com/250x150?text=Locker" alt="Locker">
+          <h3>Lockers (0.5-1 m²)</h3>
+          <p>Para tus tesoros pequeños: colecciones, documentos o esa maleta que siempre está en medio. Acceso rápido y seguro, como una extensión de tu closet.</p>
+          <a href="#precios" class="btn-primary">Reserva un locker</a>
+        </div>
+        <div class="service-card">
+          <img src="https://via.placeholder.com/250x150?text=Extras" alt="Extras">
+          <h3>Servicios extras</h3>
+          <p>Recojo y entrega, seguro incluido y gestión desde nuestra app FerLock.</p>
+          <a href="#contacto" class="btn-primary">Conoce todos los beneficios</a>
+        </div>
+      </div>
+      <p style="font-style: italic; text-align: center; margin-top: 20px;">“Con FerLock, no guardas cosas. Guardas momentos, sueños y espacio para vivir mejor.”</p>
+    </div>
+  </section>
+
+  <!-- ¿Cómo funciona? -->
+  <section id="como-funciona">
+    <div class="container">
+      <h2>Tan fácil como 1, 2, 3</h2>
+      <p>En FerLock, simplificamos todo para que guardar tus cosas sea un placer, no un problema.</p>
+      <div class="steps">
+        <div class="step">
+          <img src="https://via.placeholder.com/250x150?text=Elige" alt="Elige tu espacio">
+          <h3>1. Elige tu espacio</h3>
+          <p>Selecciona un mini-almacén o locker según lo que necesites. Usa nuestra calculadora o contáctanos para asesorarte.</p>
+        </div>
+        <div class="step">
+          <img src="https://via.placeholder.com/250x150?text=Reserva" alt="Reserva y guarda">
+          <h3>2. Reserva y guarda</h3>
+          <p>Haz tu reserva online, trae tus cosas o déjalas con nuestro servicio de recojo. ¡Listo, tu espacio está asegurado!</p>
+        </div>
+        <div class="step">
+          <img src="https://via.placeholder.com/250x150?text=Accede" alt="Accede cuando quieras">
+          <h3>3. Accede cuando quieras</h3>
+          <p>Usa tu código único para entrar 24/7. Monitorea todo desde nuestra app y vive tranquilo.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="#contacto" class="btn-primary">Prueba FerLock hoy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Precios -->
+  <section id="precios">
+    <div class="container">
+      <h2>Espacios que caben en tu presupuesto</h2>
+      <p>Transparentes y sin sorpresas. Elige el plan que mejor se adapta a ti y empieza a disfrutar de más espacio hoy.</p>
+      <div class="pricing-table">
+        <div class="price-card">
+          <h3>Locker Pequeño (0.5 m²)</h3>
+          <p class="price">S/ 35/mes</p>
+          <p>Ideal para: Documentos, maletas, colecciones.</p>
+          <p>Incluye: Seguro, acceso 24/7, app.</p>
+        </div>
+        <div class="price-card">
+          <h3>Locker Grande (1 m²)</h3>
+          <p class="price">S/ 60/mes</p>
+          <p>Ideal para: Equipos deportivos, cajas grandes.</p>
+          <p>Incluye: Todo lo anterior + opción de recojo.</p>
+        </div>
+        <div class="price-card">
+          <h3>Mini-Almacén Chico (2 m²)</h3>
+          <p class="price">S/ 120/mes</p>
+          <p>Ideal para: Decoraciones, ropa estacional, bicicletas.</p>
+          <p>Incluye: Todo lo anterior + estanterías.</p>
+        </div>
+        <div class="price-card">
+          <h3>Mini-Almacén Mediano (5 m²)</h3>
+          <p class="price">S/ 250/mes</p>
+          <p>Ideal para: Muebles pequeños, mudanzas.</p>
+          <p>Incluye: Todo lo anterior + asesoría personalizada.</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 20px;">Descuento del 10% por pago anual. Primer mes gratis para contratos de 6 meses.</p>
+      <div style="text-align: center;">
+        <a href="#contacto" class="btn-primary">Cotiza tu espacio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section id="sobre-nosotros">
+    <div class="container">
+      <h2>FerLock: Tu espacio, nuestra pasión</h2>
+      <p>Somos más que un lugar para guardar cosas. Somos la solución para que vivas más ligero en Pueblo Libre.</p>
+      <p style="max-width: 800px; margin: 20px auto;">En FerLock, todo empezó con una idea simple: devolverle el espacio a las familias y personas que aman su hogar, pero sienten que las cosas se acumulan. Vivimos en Pueblo Libre, como tú, y sabemos lo que es querer un depa ordenado sin sacrificar lo que importa. Por eso creamos mini-almacenes y lockers seguros, accesibles y pensados para ti.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Confianza</h3>
+          <p>Seguridad y transparencia en cada paso.</p>
+        </div>
+        <div class="service-card">
+          <h3>Conveniencia</h3>
+          <p>Espacios y servicios que hacen tu vida más fácil.</p>
+        </div>
+        <div class="service-card">
+          <h3>Comunidad</h3>
+          <p>Apoyamos a nuestros vecinos en Pueblo Libre.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="#contacto" class="btn-primary">Conócenos mejor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <div class="container">
+      <h2>Estamos a un clic de ayudarte</h2>
+      <p>¿Listo para liberar espacio? Escríbenos, llámanos o visítanos en Pueblo Libre.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <select>
+          <option value="">Selecciona tu interés</option>
+          <option value="locker">Locker</option>
+          <option value="mini-almacen">Mini-almacén</option>
+          <option value="consulta">Consulta general</option>
+        </select>
+        <textarea placeholder="Mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Dirección:</strong> Av. Sucre XXX, Pueblo Libre, Lima</p>
+        <p><strong>Teléfono:</strong> +51 987 654 321</p>
+        <p><strong>Email:</strong> contacto@ferlock.pe</p>
+        <p><strong>Horario:</strong> Lunes a domingo, 8:00 - 20:00</p>
+        <p><a href="https://wa.me/+51987654321" class="btn-primary" target="_blank">WhatsApp</a></p>
+        <p>
+          <a href="https://instagram.com/FerLockPeru" target="_blank">Instagram</a> |
+          <a href="https://facebook.com/FerLockPeru" target="_blank">Facebook</a> |
+          <a href="https://tiktok.com/@FerLockPeru" target="_blank">TikTok</a>
+        </p>
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.625775074723!2d-77.07207188518115!3d-12.073093991450614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c99c0c7b5b3b%3A0x6e7f7b7b7c7b7b7b!2sAv.%20Antonio%20Jos%C3%A9%20de%20Sucre%2C%20Pueblo%20Libre%2015072%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1634567890123" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>FerLock: Donde tus cosas encuentran su lugar y tu hogar recupera su magia.</p>
+    </div>
+  </footer>
+</body>
+</html>
