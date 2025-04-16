@@ -29,7 +29,7 @@
     }
     /* Navegación */
     nav {
-      background-color: #1e3a8a; /* Azul claro */
+      background-color: #1e3a8a;
       padding: 15px 0;
       position: sticky;
       top: 0;
@@ -51,7 +51,7 @@
       transition: color 0.3s;
     }
     nav a:hover {
-      color: #f97316; /* Naranja suave */
+      color: #f97316;
     }
     .hamburger {
       display: none;
@@ -297,6 +297,7 @@
         top: 60px;
         left: 0;
         padding: 10px 0;
+        transition: all 0.3s ease;
       }
       .nav-links.active {
         display: flex;
@@ -304,6 +305,7 @@
       .nav-links a {
         padding: 15px;
         text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       }
       /* Botones CTA */
       .btn-primary, .btn-secondary {
@@ -550,11 +552,15 @@
 
   <!-- Script para menú hamburguesa -->
   <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
 
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        // Opcional: Cambia el ícono al abrir/cerrar
+        hamburger.textContent = navLinks.classList.contains('active') ? '✖' : '☰';
+      });
     });
   </script>
 </body>
